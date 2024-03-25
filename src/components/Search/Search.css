@@ -1,0 +1,12 @@
+a {
+  color: #b3b3b3;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.license-wrapper a {
+  text-decoration: none;
+}

@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  height: calc(101% - theme("spacing.24"));
+  width: 100%;
+}
+.bottom-wrapper {
+  height: 90px;
+  width: 99%;
+}
+.content-cont {
+  height: 595px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addicon {
+  font-size: 26px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.active {
+  transform: translateX(-43%);
+}
+
+.right-button {
+  position: relative;
+  right: 180px;
+  font-size: 28px;
+  border: none;
+}
+.left-button {
+  position: relative;
+  right: 290px;
+  font-size: 28px;
+  border: none;
+}
+
+.icon {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.disable {
+  opacity: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playlist-height {
+  height: 365px;
 }
