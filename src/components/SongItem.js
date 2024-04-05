@@ -1,7 +1,6 @@
 import React from "react";
 import { FaCirclePlay } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { setCurrent } from "../redux/app/features/counter/CounterSlice";
 
 const SongItem = ({ item }) => {

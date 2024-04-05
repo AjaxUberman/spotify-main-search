@@ -26,6 +26,7 @@ const Content = ({ scrolled }) => {
         <div className="pt-5 px-5">
           <Routes>
             <Route path="/Anasayfa" element={<Anasayfa />} />
+            <Route path="/" element={<Anasayfa />} />
             <Route path="/Ara" element={<Ara />} />
             <Route path="/Playlists" element={<Sarkiliste />} />
           </Routes>

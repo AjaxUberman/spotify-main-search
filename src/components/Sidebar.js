@@ -4,7 +4,7 @@ import { FaSearchengin } from "react-icons/fa6";
 import Library from "./Library";
 import { useEffect } from "react";
 import "../App.css";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const location = useLocation();

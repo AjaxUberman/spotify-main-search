@@ -1,19 +1,8 @@
 import React, { useEffect } from "react";
-import { FaRandom } from "react-icons/fa";
-import { FaStepBackward } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
-import { FaStepForward } from "react-icons/fa";
-import { FaRepeat } from "react-icons/fa6";
-import { secondsToTime } from "../../utils";
 import { useAudio } from "react-use";
 import { FaPauseCircle } from "react-icons/fa";
 import CustomRange from "../Bottom/CustomRange";
-import { FaMicrophone } from "react-icons/fa6";
-import { FaListUl } from "react-icons/fa";
-import { MdOutlineComputer } from "react-icons/md";
-import { RxSpeakerModerate } from "react-icons/rx";
-import { RxSpeakerOff } from "react-icons/rx";
-import { MdFullscreenExit } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { setControls } from "../../redux/app/features/counter/CounterSlice";
 

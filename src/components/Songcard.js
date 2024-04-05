@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ClampLines from "react-clamp-lines";
 import SongItem from "./SongItem";
 
 const Songcard = ({ title, more = false, items }) => {
