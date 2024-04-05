@@ -15,7 +15,7 @@ import store from "./redux/app/store";
 
 const router = createBrowserRouter([
   {
-    path: "/Anasayfa",
+    path: "/" || "/Anasayfa",
     element: <Anasayfa />,
   },
   {
