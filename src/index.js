@@ -15,7 +15,11 @@ import store from "./redux/app/store";
 
 const router = createBrowserRouter([
   {
-    path: "/" || "/Anasayfa",
+    path: "/",
+    element: <Anasayfa />,
+  },
+  {
+    path: "/Anasayfa",
     element: <Anasayfa />,
   },
   {
@@ -26,7 +30,7 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider store={store}>
+  <Provider store={store} router={router}>
     <BrowserRouter>
       <App />
     </BrowserRouter>

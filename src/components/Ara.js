@@ -18,7 +18,7 @@ const Ara = () => {
     <>
       <input
         placeholder="Ne Çalmak İstiyorsun?"
-        className="rounded-full bg-active text-graytext py-2 px-5 pr-12 fixed top-5 z-10 translate-x-20 "
+        className="rounded-full bg-active text-graytext py-2 px-5 pr-12  md:top-5 top-14 z-10 translate-x-20 "
         onChange={searchItem}
       />
       <div className="py-3 px-2">

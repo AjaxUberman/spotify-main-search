@@ -8,9 +8,9 @@ import "../App.css";
 
 const Library = () => {
   return (
-    <div>
+    <div className="flex flex-col 2xl:h-[785px] xl:h-[480px]">
       {/* TOP */}
-      <div className="flex justify-between text-graytext">
+      <div className="flex justify-between text-graytext    ">
         <div className="flex items-center hover:text-white transition ease-in scale-125 pl-8 pt-5 gap-2 font-bold cursor-pointer">
           <FaAlignLeft />
           <p>Kitaplığın</p>
@@ -23,13 +23,13 @@ const Library = () => {
       {/* TOP */}
 
       {/* SLIDER */}
-      <div className="pt-8 overflow-x-hidden mr-3 ">
+      <div className="pt-8  mr-3 ">
         <MultipleItems />
       </div>
       {/* SLIDER */}
 
       {/* PLAYLISTS */}
-      <div className="playlist-height pt-4 overflow-y-scroll  overflow-x-hidden scroll-smooth scrollbar scrollbar-thumb-graytext scrollbar-track-transparent transition duration-200 ease-in">
+      <div className="md:playlist-height 2xl:h-[660px] 2xl:pt-8 pt-4 overflow-y-scroll  overflow-x-hidden scroll-smooth scrollbar scrollbar-thumb-graytext scrollbar-track-transparent transition duration-200 ease-in">
         <Playlists className="" />
       </div>
       {/* PLAYLISTS */}

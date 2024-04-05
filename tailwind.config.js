@@ -13,6 +13,7 @@ module.exports = {
       },
       width: {
         degernav: "1000px",
+        navbar: "calc(100% - 505px)",
       },
     },
   },

@@ -11,10 +11,10 @@ const SongItem = ({ item }) => {
     dispatch(setCurrent(item));
   };
   return (
-    <div>
+    <div className="">
       <div
         key={item.id}
-        className="rounded-xl hover:bg-active px-3 py-2  group"
+        className="rounded-xl hover:bg-active px-3 py-2 group relative"
       >
         <img src={item.image} className="rounded-xl w-full h-52 object-cover" />
 
@@ -26,7 +26,7 @@ const SongItem = ({ item }) => {
         <p className="text-graytext">{item.description}</p>
         <FaCirclePlay
           onClick={updateCurrent}
-          className=" opacity-0 group-hover:opacity-100 duration-200	 transition ease-in relative  group-hover:-translate-y-24 -translate-y-20  translate-x-40  bottom-2 right-2 text-5xl text-primarygreen bg-black rounded-full"
+          className=" opacity-0 group-hover:opacity-100 duration-200	 transition ease-in group-hover:-translate-y-24 md:-translate-y-20  md:translate-x-40  md:bottom-2 md:text-5xl text-3xl absolute right-6 -bottom-4 text-primarygreen bg-black rounded-full"
         />
       </div>
     </div>

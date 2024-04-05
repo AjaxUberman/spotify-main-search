@@ -16,7 +16,7 @@ const SearchCategory = ({ items }) => {
   }
 
   return (
-    <div className="grid grid-cols-5 pt-5 gap-6">
+    <div className="grid md:grid-cols-5 pt-5 gap-6 grid-cols-2">
       {repeatedItems.map((item, index) => (
         <SearchCategoryItem key={index} item={item} />
       ))}

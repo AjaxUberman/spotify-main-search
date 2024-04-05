@@ -33,25 +33,8 @@ body,
   transform: translateX(-43%);
 }
 
-.right-button {
-  position: relative;
-  right: 180px;
-  font-size: 28px;
-  border: none;
-}
-.left-button {
-  position: relative;
-  right: 290px;
-  font-size: 28px;
-  border: none;
-}
-
 .icon {
   color: white;
-}
-
-.disable {
-  opacity: 0;
 }
 
 .playlist-height {

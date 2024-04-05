@@ -9,16 +9,15 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 const Sidebar = () => {
   const location = useLocation();
   useEffect(() => {
-    // URL kontrolü ve gerektiğinde stil değişikliği
     if (location.pathname === "/Ara") {
       document.querySelector(".yazi").style.color = "white";
     } else {
-      document.querySelector(".yazi").style.color = "#b3b3b3"; // Varsayılan renk
+      document.querySelector(".yazi").style.color = "#b3b3b3";
     }
   }, [location.pathname]);
-  console.log(location);
+
   return (
-    <div className="text-white bg-black h-full p-2">
+    <div className="text-white bg-black h-full p-2 ">
       {/* Sol UST  */}
       <div className="text-graytext  bg-backdrop p-3 items-left flex flex-col justify-between cursor-pointer rounded-lg h-28 gap-6">
         <Link

@@ -38,9 +38,17 @@ const Anasayfa = () => {
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
       artist: "Travis Scott",
     },
+    {
+      id: 5,
+      title: "Born To Die-The Paradise Continious",
+      description: "Oluşturan Barış Kayıkçı",
+      image: "https://picsum.photos/id/237/200/300",
+      src: "https://freesound.org/data/previews/612/612085_28867-lq.mp3",
+      artist: "Lana Del Rey",
+    },
   ];
   return (
-    <div className="grid gap-y-6 ">
+    <div className="grid gap-y-6  ">
       <Songcard title="Çalma Listelerin" more="/seeMore" items={items} />
       <Songcard
         title="En çok dinlediğin mix'ler"

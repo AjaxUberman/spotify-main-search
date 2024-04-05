@@ -5,8 +5,8 @@ import SongItem from "./SongItem";
 
 const Songcard = ({ title, more = false, items }) => {
   return (
-    <div>
-      <header className="flex items-center justify-between mb-4">
+    <div className="">
+      <header className="flex items-center justify-between mb-4 ">
         <Link to="/Playlists">
           <h3 className="text-2xl font-bold text-white hover:underline">
             {title}
@@ -18,7 +18,7 @@ const Songcard = ({ title, more = false, items }) => {
           </Link>
         )}
       </header>
-      <div className="grid grid-cols-4 gap-3 cursor-pointer">
+      <div className="grid md:grid-cols-4 2xl:grid-cols-5 grid-cols-2 gap-3 cursor-pointer">
         {items.map((item) => (
           <SongItem key={item.id} item={item} />
         ))}
