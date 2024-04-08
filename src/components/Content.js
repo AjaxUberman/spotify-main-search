@@ -22,7 +22,8 @@ const Content = ({ scrolled }) => {
           }`}
         >
           <Navbar scrolled={scrolled} />
-        </div>
+        </div>y
+        
         <div className="pt-5 px-5">
           <Routes>
             <Route path="/Anasayfa" element={<Anasayfa />} />
