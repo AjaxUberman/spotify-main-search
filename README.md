@@ -1,4 +1,4 @@
-# TodoGame
+# Spotify Half Clone
 
 ## Screenshots
 
